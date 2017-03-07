@@ -33,3 +33,16 @@ color = raw_input("What is your favorite color?")
 # \ is simply a continuation marker
 print "Ah, so your name is %s, your quest is %s, " \
 "and your favorite color is %s." % (name, quest, color)
+
+# Getting current data and time
+from datetime import datetime
+
+now = datetime.now
+print now # will print date in following format year-month-day 23:43:37.127290
+print now.year # will return current year
+print now.month # will return current month
+print now.day # will return current day
+
+# To properly format everything simply use %s
+print "%s/%s/%s" % (now.month, now.day, now.year)
+# Same can be done for time using hour, minute, second
