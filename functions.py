@@ -60,3 +60,42 @@ print type (45) # <type 'int'>
 print type(4.2222) # <type 'float'>
 print type('spam') # <type 'str'>
 #--------------------------------------------------------------------------
+# Review Functions
+
+# Shut down function
+ef shut_down(s):
+    if s=="yes":
+        return "Shutting down"
+    elif s=="no":
+        return "Shutdown aborted"
+    else:
+        return "Sorry"
+
+print shut_down("yes")
+
+# Built-In functions
+def distance_from_zero(arg):
+    if type(arg) == int or type(arg) == float:
+        return abs(arg)
+    else:
+        return "Nope"
+             
+print distance_from_zero(7.455)
+#----------------------------------------------------------------------------
+# Take a Vacation
+def hotel_cost(nights):
+    return 140 * nights
+    
+print hotel_cost(3)
+
+def plane_ride_cost(city):
+    if city=="Charlotte":
+        return 183
+    elif city=="Tampa":
+        return 220
+    elif city=="Pittsburgh":
+        return 222
+    elif city=="Los Angeles":
+        return 475
+
+
