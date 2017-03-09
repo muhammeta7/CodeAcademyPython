@@ -27,3 +27,36 @@ def by_three(number):
         return False
                
 print by_three(18)
+
+# Importing math module
+import math
+print math.sqrt(25) # sqrt function within math moule
+
+# This method just imports the sqrt function from math module
+from math import sqrt
+print sqrt(25)
+
+# Import *everything* from the math module
+from math import *
+print sqrt(25) 
+
+# math module built-in functions
+import math            # Imports the math module
+everything = dir(math) # Sets everything to a list of things from math
+print everything       # Prints 'em all!
+#-----------------------------------------------------------------------
+# Some functions are built in and don't need any imports
+maximum = max(1,2,3,4,5,6,7)
+print maximum # Will return biggest number in list
+
+minimum = min(15,3,5,1,19)
+print minimum # Will return smallest number in list
+
+absolute = abs(-42)
+print absolute # Absolute value of number
+
+# Print out the types of an integer, a float, and a string on separate lines below.
+print type (45) # <type 'int'>
+print type(4.2222) # <type 'float'>
+print type('spam') # <type 'str'>
+#--------------------------------------------------------------------------
