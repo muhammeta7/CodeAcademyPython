@@ -40,3 +40,19 @@ print first # returns ['sunglasses' , 'hat']
 print middle # returns ['passport' , 'laptop']
 print last # returns ['suit', 'shoes']
 
+## Slicing strings 
+animals = "catdogfrog"
+cat  = animals[0:3] 
+dog  = animals[3:6]            
+frog = animals[6:10]           
+
+print cat
+print dog
+print frog
+
+# Using .index to find index of specific list item
+animals = ["aardvark", "badger", "duck", "emu", "fennec fox"]
+duck_index = animals.index("duck")   # Use index() to find "duck"
+print duck_index
+animals.insert(duck_index,"cobra") # Use insert to add "cobra" to index 2 
+print animals # ['aardvark', 'badger', 'cobra', 'duck', 'emu', 'fennec fox']
