@@ -123,3 +123,4 @@ zoo_animals['Rockhopper Penguin']='Something Else'
 print zoo_animals
 
 # -------------------------------------------------------------------------
+# Removing items from a list
