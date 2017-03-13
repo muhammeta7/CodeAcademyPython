@@ -44,7 +44,9 @@ print sqrt(25)
 import math            # Imports the math module
 everything = dir(math) # Sets everything to a list of things from math
 print everything       # Prints 'em all!
+
 #-----------------------------------------------------------------------
+
 # Some functions are built in and don't need any imports
 maximum = max(1,2,3,4,5,6,7)
 print maximum # Will return biggest number in list
@@ -59,7 +61,9 @@ print absolute # Absolute value of number
 print type (45) # <type 'int'>
 print type(4.2222) # <type 'float'>
 print type('spam') # <type 'str'>
+
 #--------------------------------------------------------------------------
+
 # Review Functions
 
 # Shut down function
@@ -81,7 +85,9 @@ def distance_from_zero(arg):
         return "Nope"
              
 print distance_from_zero(7.455)
+
 #----------------------------------------------------------------------------
+
 # Take a Vacation
 def hotel_cost(nights):
     return 140 * nights

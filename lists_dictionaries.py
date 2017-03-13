@@ -56,3 +56,32 @@ duck_index = animals.index("duck")   # Use index() to find "duck"
 print duck_index
 animals.insert(duck_index,"cobra") # Use insert to add "cobra" to index 2 
 print animals # ['aardvark', 'badger', 'cobra', 'duck', 'emu', 'fennec fox']
+
+#----------------------------------------------------------------------------
+
+# Introduction to For Loops to iterate through a list
+for variable in list_name:
+  # Do stuff
+
+
+# Example where it doubles each value in list
+my_list = [1,9,3,8,5,7]
+for number in my_list:
+  print 2*number # will print 2, 18, 6, 16, 10, 14
+
+# You can use the .sort() helper to clean up your mess
+ animals = ["cat", "ant", "bat"]
+animals.sort()
+
+for animal in animals:
+    print animal # will return ant bat cat
+
+# Loop that iterates over start_list & appends to squared_list 
+start_list = [5, 3, 1, 2, 4]
+square_list = []
+
+for x in start_list:
+    square_list.append(x**2)
+    square_list.sort() # Returns squared list from leat to greatest
+
+  
