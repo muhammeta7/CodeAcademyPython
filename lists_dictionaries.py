@@ -84,4 +84,42 @@ for x in start_list:
     square_list.append(x**2)
     square_list.sort() # Returns squared list from leat to greatest
 
-  
+
+# -------------------------------------------------------------------------
+
+# Intro to key value pairs ( dictionary )
+residents = {'Puffin' : 104, 'Sloth' : 105, 'Burmese Python' : 106}
+print residents['Sloth'] # Will return 105
+
+# Inputting a new entry to a dictionary
+ menu = {} # Empty dictionary
+menu['Chicken Alfredo'] = 14.50 
+print menu['Chicken Alfredo']
+
+menu['Spam']=2.50
+menu['Apples']=1.00
+menu['Steak']=11.00
+
+print "There are " + str(len(menu)) + " items on the menu." # 4 items
+print menu
+
+# Items can be removed from a dictionary using the 'del' command
+del dict_name[key_name]
+
+# key - animal_name : value - location 
+zoo_animals = { 'Unicorn' : 'Cotton Candy House',
+'Sloth' : 'Rainforest Exhibit',
+'Bengal Tiger' : 'Jungle House',
+'Atlantic Puffin' : 'Arctic Exhibit',
+'Rockhopper Penguin' : 'Arctic Exhibit'}
+
+# Removing the 'Unicorn' entry.
+del zoo_animals['Unicorn']
+del zoo_animals['Sloth']
+del zoo_animals['Bengal Tiger']
+
+zoo_animals['Rockhopper Penguin']='Something Else'
+
+print zoo_animals
+
+# -------------------------------------------------------------------------
