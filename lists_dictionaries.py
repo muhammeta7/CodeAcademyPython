@@ -70,7 +70,7 @@ for number in my_list:
   print 2*number # will print 2, 18, 6, 16, 10, 14
 
 # You can use the .sort() helper to clean up your mess
- animals = ["cat", "ant", "bat"]
+animals = ["cat", "ant", "bat"]
 animals.sort()
 
 for animal in animals:
@@ -83,6 +83,10 @@ square_list = []
 for x in start_list:
     square_list.append(x**2)
     square_list.sort() # Returns squared list from leat to greatest
+
+# Removing items from a list
+list_name.remove(item)
+
 
 
 # -------------------------------------------------------------------------
@@ -123,4 +127,22 @@ zoo_animals['Rockhopper Penguin']='Something Else'
 print zoo_animals
 
 # -------------------------------------------------------------------------
-# Removing items from a list
+# Dictionary Review
+inventory = {
+    'gold' : 500,
+    'pouch' : ['flint', 'twine', 'gemstone'], # Assigned a new list to 'pouch' key
+    'backpack' : ['xylophone','dagger', 'bedroll','bread loaf']
+}
+
+# Adding a key 'burlap bag' and assigning a list to it
+inventory['burlap bag'] = ['apple', 'small ruby', 'three-toed sloth']
+
+# Sorting the list found under the key 'pouch'
+inventory['pouch'].sort() 
+inventory['pocket']=['seashell','strange berry','lint']
+inventory['backpack'].sort()
+inventory['backpack'].remove('dagger')
+inventory['gold']=550
+
+print inventory
+
