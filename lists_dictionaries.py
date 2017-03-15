@@ -149,8 +149,6 @@ print inventory
 
 # -----------------------------------------------------------------------------------
 
-# A Day at the SuperMarket
-
 # BeFOR we Begin
 names = ["Adam","Alex","Mariah","Martine","Columbus"]
 
@@ -199,3 +197,19 @@ for letter in word:
     if letter == "i": # Will print out any instances of the letter i
         print letter
 
+# -----------------------------------------------------------------------------
+
+# A Day at the SuperMarket
+prices = {
+    "banana":4,
+    "apple":2,
+    "orange":1.5,
+    "pear":3
+}
+
+stock = {
+    "banana":6,
+    "apple":0,
+    "orange":32,
+    "pear":15
+}
