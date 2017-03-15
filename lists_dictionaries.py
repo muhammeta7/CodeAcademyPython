@@ -213,3 +213,26 @@ stock = {
     "orange":32,
     "pear":15
 }
+
+total = 0 # initialize total
+for key in prices:
+    print key
+    print "price: %s" %prices[key]
+    print "stock: %s" %stock[key]
+    total += prices[key]*stock[key] 
+
+print total # will print total amount of all stock
+
+# Create shopping list and make function to compute_bill
+
+shopping_list = ["banana", "orange", "apple"]
+
+def compute_bill(food):
+    total=0
+    for item in food:
+        total=total+prices[item]
+        
+    return total
+
+print compute_bill(shopping_list)
+print stock
