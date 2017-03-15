@@ -126,7 +126,8 @@ zoo_animals['Rockhopper Penguin']='Something Else'
 
 print zoo_animals
 
-# -------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
+
 # Dictionary Review
 inventory = {
     'gold' : 500,
@@ -145,4 +146,56 @@ inventory['backpack'].remove('dagger')
 inventory['gold']=550
 
 print inventory
+
+# -----------------------------------------------------------------------------------
+
+# A Day at the SuperMarket
+
+# BeFOR we Begin
+names = ["Adam","Alex","Mariah","Martine","Columbus"]
+
+for item in names:
+    print item
+
+# Major KEY
+webster = {
+  "Aardvark" : "A star of a popular children's cartoon show.",
+    "Baa" : "The sound a goat makes.",
+    "Carpet": "Goes on the floor.",
+    "Dab": "A small amount."
+}
+
+for key in webster:
+    print webster[key]
+
+# For Loop to print only even numbers in a list
+a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+
+for item in a:
+    if item%2 ==0:
+        print a[item]
+
+# Fizz count function with for loop
+def fizz_count(x):
+     count = 0 # initialize count
+     for item in x:
+         if item=="fizz":
+             count= count+1 # increment count
+             
+     return count
+
+print fizz_count(["fizz", "cat", "fizz"])
+
+# String Looping
+for letter in "Codecademy":
+    print letter # will return each letter in string
+    
+print # Empty lines to make the output pretty
+print 
+
+word = "Programming is fun!"
+
+for letter in word:
+    if letter == "i": # Will print out any instances of the letter i
+        print letter
 
