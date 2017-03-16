@@ -130,3 +130,24 @@ def join_strings(words):
     return result
     
 print join_strings(n)
+
+# Using two lists as two arguments in a function
+m = [1, 2, 3]
+n = [4, 5, 6]
+
+def join_lists(x,y):
+    return x+y
+
+print join_lists(m, n)
+
+# Using a list of lists in a function
+n = [[1, 2, 3], [4, 5, 6, 7, 8, 9]]
+
+def flatten(lists):
+    results=[]
+    for numbers in lists:
+        for i in numbers:
+            results.append(i)
+    return results
+        
+print flatten(n)
