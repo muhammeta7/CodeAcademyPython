@@ -37,3 +37,31 @@ def get_average(student):
     quizzes=average(student["quizzes"])*0.3
     tests=average(student["tests"])*0.6
     return homework+quizzes+tests
+
+# Letter grade functions
+def get_letter_grade(score):
+    if score>=90:
+        return "A"
+    elif score>=80:
+        return "B"
+    elif score>=70:
+        return "C"
+    elif score>=60:
+        return "D"
+    else:
+        return "F"
+        
+print get_letter_grade(get_average(lloyd))
+print get_letter_grade(get_average(alice))
+print get_letter_grade(get_average(tyler))
+
+# Get the class average function
+def get_class_average(students):
+    results = []
+    for student in students:
+        current_result = get_average(student)
+        results.append(current_result)
+    return average(results)
+    
+print get_class_average(students)
+print get_letter_grade(get_class_average(students))
