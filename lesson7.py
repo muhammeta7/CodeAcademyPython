@@ -67,3 +67,66 @@ def list_extender(list):
     return list
 
 print list_extender(n)
+
+# Printing out list item by item in a function
+n = [3, 5, 7]
+  
+def print_list(x):
+    for i in range(0, len(x)):
+        print x[i]
+   
+print_list(n)
+
+# Modify each element in a list in a function
+n = [3, 5, 7]
+
+for i in range(0, len(n)):
+    n[i] = n[i] * 2
+
+def double_list(x):
+    for i in range(0, len(x)):
+        x[i] = x[i] * 2
+          
+    return x
+        
+print double_list(n)
+
+# ------------------------------------------------------------------------------------
+
+""" Understanding ranges:
+    01.) range(stop) so range(6) would return [0,1,2,3,4,5]
+    02.) range(start,stop) so range(1,6) would return [1,2,3,4,5]
+    03.) range(start,stop,step) so range(1,6,3) would return [1,4]
+"""
+
+# Passing a range into a function
+def my_function(x):
+    for i in range(0, len(x)):
+        x[i] = x[i] * 2
+    return x
+
+print my_function(range(3))
+
+# Iterating over a list in a function
+n = [3, 5, 7]
+
+def total(numbers):
+    result=0
+    for i in range(len(numbers)):
+        result += numbers[i]
+        
+    return result
+        
+print total(n)
+
+# Using strings in lists in functions
+n = ["Michael", "Lieberman"]
+
+def join_strings(words):
+    result=""
+    for i in range(len(words)):
+        result=result+words[i]
+        
+    return result
+    
+print join_strings(n)
