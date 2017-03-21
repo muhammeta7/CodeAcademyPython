@@ -36,3 +36,49 @@ count = 0
 while count < 10: 
     print count
     count +=1  # lets say -= was the case it would never break out of loop
+
+## Break is to break out of a loop in a conditional
+count = 0
+
+while True:
+    print count
+    count += 1
+    if count >= 10:
+        break
+
+## While / else
+import random
+
+print "Lucky Numbers! 3 numbers will be generated."
+print "If one of them is a '5', you lose!"
+
+count = 0
+while count < 3:
+    num = random.randint(1, 6)
+    print num
+    if num == 5:
+        print "Sorry, you lose!"
+        break
+    count += 1
+else: ## executes any time the loop condition is evaluated False
+    print "You win!"
+
+## Your own while / else 
+from random import randint
+
+# Generates a number from 1 through 10 inclusive
+random_number = randint(1, 10)
+print random_number
+
+guesses_left = 3
+
+while guesses_left > 0: # Starts game
+    guess = int(raw_input("Your guess: "))
+    if guess == random_number:
+        print "You win!"
+        break
+    guesses_left -= 1
+    print guesses_left
+else:
+    print "You lose."
+
