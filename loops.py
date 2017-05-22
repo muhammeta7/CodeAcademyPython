@@ -95,3 +95,13 @@ def censor(text, word):
     return new_text.lstrip(" ")
 
 print censor("hey hey hey", "hey")
+
+# Count 
+def count(sequence,item):
+    num_counter = 0
+    for i in sequence:
+        if i == item:
+            num_counter = num_counter+1
+    return num_counter
+    
+print count([2,3,4,3,4,5,3],3)
