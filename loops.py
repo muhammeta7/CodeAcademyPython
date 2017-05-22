@@ -82,3 +82,16 @@ while guesses_left > 0: # Starts game
 else:
     print "You lose."
 
+# Censor
+def censor(text, word):
+    text = text.split()
+    count = len(word)
+    new_text = ''
+    for index in text:
+        if index == word:
+            new_text = new_text + " " + ("*" * count) 
+        else: 
+            new_text = new_text + " " + index 
+    return new_text.lstrip(" ")
+
+print censor("hey hey hey", "hey")
