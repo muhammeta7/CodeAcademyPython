@@ -105,3 +105,13 @@ def count(sequence,item):
     return num_counter
     
 print count([2,3,4,3,4,5,3],3)
+
+# Purify 
+def purify(array):
+    even_array=[]
+    for i in array:
+        if i%2 == 0:
+            even_array.append(i)
+    return even_array
+    
+print purify([2,3,4,5,6,7,8,9,20])
