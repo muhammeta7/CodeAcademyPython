@@ -115,3 +115,24 @@ def purify(array):
     return even_array
     
 print purify([2,3,4,5,6,7,8,9,20])
+
+# Product
+def product(array):
+    total= 1
+    for i in array:
+        total *= i    
+    return total
+    
+print product([4,5,5])
+
+# Remove Duplicates
+def remove_duplicates(array):
+    new = []
+    for i in array:
+        if i not in new:
+            new.append(i)
+    return new
+    
+print remove_duplicates([1,1,2,3,4,4,5])
+
+
