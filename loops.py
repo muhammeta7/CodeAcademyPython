@@ -147,3 +147,44 @@ def median(array):
         return (new_array[midpoint]+ second_num)/2.0
         
 print median([4,3,2,1])
+
+# ===========================================================================
+# Exam Statistics
+
+# Print those Grades
+grades = [100, 100, 90, 40, 80, 100, 85, 70, 90, 65, 90, 85, 50.5]
+
+def print_grades(grades):
+    for i in grades:
+        print i
+        
+print_grades(grades)
+
+# The sum of scores
+def grades_sum(scores):
+    total = 0
+    for i in scores:
+        total += i
+        
+    return total
+    
+print grades_sum(grades)
+
+# Computing the average
+def grades_average(grades):
+    result = grades_sum(grades)
+    return result/float(len(grades))
+    
+print "Average: ",grades_average(grades)
+
+# The Variance
+def grades_variance(scores):
+    average = grades_average(scores)
+    variance = 0
+    length = len(scores)
+    for score in scores:
+        variance += (average-score) ** 2
+        
+    return variance/length
+    
+print grades_variance(grades)
