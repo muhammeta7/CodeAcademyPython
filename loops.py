@@ -135,4 +135,15 @@ def remove_duplicates(array):
     
 print remove_duplicates([1,1,2,3,4,4,5])
 
-
+# Median
+def median(array):
+    new_array = sorted(array)
+    length = len(new_array)
+    midpoint = len(new_array)/2
+    if length%2 != 0 :
+        return new_array[midpoint]
+    else:
+        second_num = new_array[midpoint-1]
+        return (new_array[midpoint]+ second_num)/2.0
+        
+print median([4,3,2,1])
