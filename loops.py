@@ -188,3 +188,10 @@ def grades_variance(scores):
     return variance/length
     
 print grades_variance(grades)
+
+# Standard Deviation
+def grades_std_deviation(variance):
+    return variance**0.5
+    
+variance = grades_variance(grades)
+print grades_std_deviation(variance)
