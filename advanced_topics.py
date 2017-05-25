@@ -39,3 +39,36 @@ print even_squares
 cubes_by_four = [x**3 for x in range(1,11) if (x**3)%4 == 0]
 print cubes_by_four
 
+# List Slicing Syntax
+# [start:end:stride]
+# start - describes where slice starts(inclusive)
+# end - describes where slice ends(exclusive)
+# stride - describes the space between itesm in the sliced list
+l = [i ** 2 for i in range(1, 11)]
+# Should be [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+print l[2:9:2] 
+
+# Omitting Indices
+my_list = range(1, 11) # List of numbers 1 - 10
+print my_list[::2] # Will print [1,3,5,7,9]
+
+# Reversing a List
+my_list = range(1, 11)
+backwards = my_list[::-1]
+print backwards
+
+# Stride Length
+to_one_hundred = range(101)
+backwards_by_tens = to_one_hundred[::-10]
+print backwards_by_tens
+
+# Practice Makes Perfect
+to_21 = range(1,22) # Prints numbers from 1 to 21 inclusive
+odds = to_21[0:22:2] # Prints only odd numbers 
+middle_third = to_21[7:14] # Prints from 8 to 14 inclusive
+
+print to_21
+print odds
+print middle_third
+
+# Anonymous Functions
