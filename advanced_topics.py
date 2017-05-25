@@ -72,3 +72,39 @@ print odds
 print middle_third
 
 # Anonymous Functions
+my_list = range(16)
+# filter uses lamda to determine what to filter
+print filter(lambda x: x % 3 == 0, my_list)
+
+# Lambda Syntax
+languages = ["HTML", "JavaScript", "Python", "Ruby"]
+print filter(lambda x: x == "Python", languages)
+
+# Try It
+squares = [x**2 for x in range(1,11)]
+print filter(lambda x: x>=30 and x<=70 , squares)
+
+# ===============================================================
+
+# Iterating Over Dictionaries
+movies = {
+  "Monty Python and the Holy Grail": "Great",
+  "Monty Python's Life of Brian": "Good",
+  "Monty Python's Meaning of Life": "Okay"
+}
+
+print movies.items()
+
+# Comprehending Comprehensions
+threes_and_fives = [x for x in range(1,16) if x%3 ==0 or x%5 ==0]
+print threes_and_fives # [3, 5, 6, 9, 10, 12, 15]
+
+# List Slicing
+garbled = "!XeXgXaXsXsXeXmX XtXeXrXcXeXsX XeXhXtX XmXaX XI"
+message = garbled[::-2]
+print message
+
+# Lambda Expressions
+garbled = "IXXX aXXmX aXXXnXoXXXXXtXhXeXXXXrX sXXXXeXcXXXrXeXt mXXeXsXXXsXaXXXXXXgXeX!XX"
+message = filter(lambda x: x!='X', garbled)
+print message
