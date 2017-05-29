@@ -182,5 +182,44 @@ A BIT of This AND That
 
 print bin(0b1110 & 0b101) # Prints 0b100
 
+"""
 
+A BIT of This OR That
+
+   a:  00101010  42
+    b:  00001111  15       
+================
+a | b:  00101111  47
+
+0 | 0 = 0
+0 | 1 = 1 
+1 | 0 = 1
+1 | 1 = 1
+
+
+"""
+
+print bin(0b1110 | 0b101) #0b1111
+
+"""
+
+This XOR That?
+
+    a:  00101010   42
+    b:  00001111   15       
+================
+a ^ b:  00100101   37
+
+0 ^ 0 = 0
+0 ^ 1 = 1
+1 ^ 0 = 1
+1 ^ 1 = 0
+
+The XOR (^) or exclusive or operator compares two numbers on a bit level and returns a 
+number where the bits of that number are turned on if either of the corresponding
+bits of the two numbers are 1, but not both.
+
+"""
+
+print bin(0b1110 ^ 0b101) # #0b1011
 
