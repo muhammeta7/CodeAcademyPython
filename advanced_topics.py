@@ -108,3 +108,79 @@ print message
 garbled = "IXXX aXXmX aXXXnXoXXXXXtXhXeXXXXrX sXXXXeXcXXXrXeXt mXXeXsXXXsXaXXXXXXgXeX!XX"
 message = filter(lambda x: x!='X', garbled)
 print message
+
+# ====================================================================
+
+# Bit-Wise Operators
+
+# The Base 2 Number System
+print 0b1,    #1
+print 0b10,   #2
+print 0b11,   #3
+print 0b100,  #4
+print 0b101,  #5
+print 0b110,  #6
+print 0b111   #7
+print 0b111   #7
+print 0b1000  #8
+print 0b1001  #9
+print 0b1010  #10
+print 0b1011  #11
+print 0b1100  #12
+print "******"
+print 0b1 + 0b11
+print 0b11 * 0b11
+
+# The bin() function allows for representation of integer into string
+print bin(1)
+print bin(2)
+print bin(3)
+print bin(4)
+print bin(5)
+
+# The int() When given a string containing a number and the base that number is in, 
+# the function will return the value of that number converted to base ten.
+print int("0b11001001",2)
+
+"""
+
+# Left Bit Shift (<<)  
+0b000001 << 2 == 0b000100 (1 << 2 = 4)
+0b000101 << 3 == 0b101000 (5 << 3 = 40)       
+
+# Right Bit Shift (>>)
+0b0010100 >> 3 == 0b000010 (20 >> 3 = 2)
+0b0000010 >> 2 == 0b000000 (2 >> 2 = 0)
+
+"""
+
+# Slide Left and Slide Right
+shift_right = 0b1100
+shift_left = 0b1
+
+shift_right = shift_right >> 2
+shift_left = shift_left<< 2
+
+print bin(shift_right)
+print bin(shift_left)
+
+"""
+
+A BIT of This AND That
+
+     a:   00101010   42
+     b:   00001111   15       
+===================
+ a & b:   00001010   10
+
+0 & 0 = 0
+0 & 1 = 0
+1 & 0 = 0
+1 & 1 = 1
+
+"""
+
+print bin(0b1110 & 0b101) # Prints 0b100
+
+
+
