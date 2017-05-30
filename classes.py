@@ -205,3 +205,58 @@ class PartTimeEmployee(Employee):
         return hours * 12
 
 # This Looks Like a Job For
+"""
+
+class Derived(Base):
+   def m(self):
+       return super(Derived, self).m()
+
+m() is a method from the base class
+
+"""
+
+class Employee(object): 
+    def __init__(self, employee_name):
+            self.employee_name = employee_name
+
+    def calculate_wage(self, hours):
+            self.hours = hours
+            return hours * 20.00
+
+class PartTimeEmployee(Employee):
+    def calculate_wage(self, hours):
+            self.hours = hours 
+            return hours * 12.00
+            
+    # You can directly access attributes or methods
+    # of a superclass(Parent) by using super() 
+    def full_time_wage(self, hours): 
+            return super(PartTimeEmployee, self).calculate_wage(hours)
+
+milton = PartTimeEmployee("milton")
+print milton.full_time_wage(4)
+
+# Class Basics
+class Triangle(object):
+    def __init__(self, angle1, angle2, angle3):
+        self.angle1 = angle1
+        self.angle2 = angle2
+        self.angle3 = angle3
+
+    # Check angles to determine if actual Triangle
+    def check_angles(self):
+        if self.angle1 + self.angle2 + self.angle3 == 180:
+            return True
+        else:
+            return False
+
+class Equilateral(Triangle):
+    angle = 60
+    def __init__(self):
+        self.angle1 = self.angle
+        self.angle2 = self.angle
+        self.angle3 = self.angle
+
+my_triangle = Triangle(90, 30, 60)
+print my_triangle.number_of_sides
+print my_triangle.check_angles()
