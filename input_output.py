@@ -34,3 +34,36 @@ print my_file.read()
 my_file.close()
 
 # Reading Between the Lines
+my_file = open("text.txt", "r")
+
+# If you open a file and call .readline() on the file object, 
+# you'll get the first line of the file; 
+# subsequent calls to .readline() will return successive lines.
+print my_file.readline()
+print my_file.readline()
+print my_file.readline()
+
+"""
+
+Python doesn't flush the buffer—that is, write data to the 
+file—until it's sure you're done writing. One way to do this 
+is to close the file. If you write to a file without closing, 
+the data won't make it to the target file.
+
+"""
+my_file.close()
+
+# Buffering Data
+# Open the file for reading
+read_file = open("text.txt", "r")
+
+# Use a second file handler to open the file for writing
+write_file = open("text.txt", "w")
+# Write to the file
+write_file.write("Not closing files is VERY BAD.")
+
+# Try to read from the file
+print read_file.read()
+
+write_file.close()
+read_file.close()
