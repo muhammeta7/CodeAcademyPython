@@ -67,7 +67,7 @@ print type('spam') # <type 'str'>
 # Review Functions
 
 # Shut down function
-ef shut_down(s):
+def shut_down(s):
     if s=="yes":
         return "Shutting down"
     elif s=="no":
