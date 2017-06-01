@@ -67,3 +67,21 @@ print read_file.read()
 
 write_file.close()
 read_file.close()
+
+# The 'with' and 'as' Keywords
+# with open("file", "mode") as variable:
+    # Read or write to the file
+
+with open("text.txt", "w") as textfile:
+  textfile.write("Success!")
+
+# Try it Yourself
+with open("text.txt", "w") as my_file:
+    my_file.write("South Park is ridiculous!")
+
+# Case Closed
+with open("text.txt", "w") as my_file:
+    my_file.write("South Park is ridiculous!")
+    if not my_file.closed:
+        my_file.close()
+        print my_file.closed
